@@ -1,1 +1,29 @@
-<p>hoenn works!</p>
+<h1> Hoenn Region Gym Leaders</h1> 
+<div class="container"> 
+    @for (trainer of hoennLeaders.trainers(); track trainer.name) { 
+    <div class="leader-card"> 
+        <h2>Trainer: {{ trainer.name }}</h2> 
+        <ul> 
+            <h3>Pokemon Team</h3>
+            @for (pokemon of trainer.team; track $index) { 
+            <li> 
+                <strong>{{ pokemon }}</strong>
+            </li> 
+            } 
+            <h3>Town</h3>
+            <li> 
+                <strong>{{ trainer.town }}</strong>
+            </li> 
+            <h3>Badge</h3>
+            <li> 
+                <strong>{{ trainer.badge }}</strong>
+            </li>
+            <h3>Specialty</h3>
+            <li> 
+                <strong>{{ trainer.specialty }}</strong>
+            </li> 
+            
+        </ul> 
+    </div> 
+    } 
+</div>

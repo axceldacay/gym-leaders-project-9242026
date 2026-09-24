@@ -6,9 +6,6 @@ import { Home } from './home/home';
 
 export const routes: Routes = [
     {
-        path: 'hoenn', component: Hoenn
-    },
-    {
         path: 'kanto', component: Kanto 
     },
     {
@@ -16,6 +13,9 @@ export const routes: Routes = [
     },
     {
         path: 'home', component: Home 
+    },
+    {
+        path: 'hoenn', component: Hoenn
     },
 
 ];
